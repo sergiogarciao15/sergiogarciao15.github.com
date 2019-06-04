@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sergio's Bean Bamboozle </title>
+        <style>
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 5.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(20, 80, 40);
+                margin: 10 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="all-contents"> 
+            <nav>
+                <header> Mouse's internet blog</header>
+                <ul>
+                    <li><a href="index.html">you're house</a></li>
+                    <li><a href="portfolio.html">big folder</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="sidebar">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhQTEBIWFRIXFhIVFRgWExUXExYYFhIXFxcXExYYHyggGB0lGxMXITEtJisrLi8uFyAzODMtNygtLisBCgoKDg0OFxAQGi0iHiUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKMBNQMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQcDBAYCAQj/xAA9EAACAQMCBAMEBwcCBwAAAAAAAQIDESEEMQUSQVEGYXEigZGhBzJCUrHB0RMUM2Jy4fAjUxUWgoOSovH/xAAYAQEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EAB8RAQEAAgIDAQEBAAAAAAAAAAABAhEDEyFBYTESUf/aAAwDAQACEQMRAD8AvEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR3EuO6ah/Gqxi+28vgsnOa76R9NC/JGc+ztZP8AP5FblImS12gKq1n0nah4pUacPNvmfud0vkRkvHmtz/rL0UYXXyyV7cU/xV0ApD/n7XX/AI108fVgum68yQ4b9KdeDtXjCa72cXv3WNvIdkP4q3wcdwj6RdJWajPmpSvb2sxvi2V0ydfTqKSvFprundF5ZfxXT0ACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANgfJSSTbdkssrHxp9InK5UdLJK2HNO8n/QrYXmPpJ8Vc6em08sfbkvw9CsIx5Xzcrk395Z3y9/Iwz5PUaY4+63quvqTblOcnKWbvLeN2zBCs73ljfLdv7GGOZOV2vK2TdpyvG31V3drPPS35GTRr1qvRXS6XjdX8rtEbVqS5mpSSz5r5q1tupI15RtaEu+8bq/blWO/xIrUzuna7le2VGK26EJeYVN1i18Wd9/N4M9CUr2snn3X9N7mjOm5LrzdXzcsfS6X4nf+E+G06WnhVlFftJxUm2sq+y27WFy0mY7cxWqRjund57XXmujJvwx48r6WSip3p3zGWU119OuxK8e4TGpTdWH10s2wpK3XuchquHOMU7Xjmzxf57WyvgWmXtXLH0/Q3hzxFR1lNTpu0tpRbyn+aJg/NPDuITozjKlKUWne9/xLl8KeNIVaT/eWozim3LpJLrbozbDk3+sssNOxBW3iPxPLVVJUdM2qEEnKSfK6knss/ZVtupPeBOKSnGdCrJuVOzg3fmcXum+tn8miZyy5fym8dmO3VgA0ZgAAAAAAAAAAAxanUQpxcqkowit3JpJe9nJ8W+kXSUrxpc1af8vsw983+SZFsn6mS38diCpdZ9IWtrO1CEacf5Yuc/i1b4Ix06HFNRmTryTtvJxXwKdk9L9d9reuCp34V127i7/1yfnkxy4Pr4f73uqy91skdnxPXP8AVuAqRaLX/frtedST+N2Smi0Nd3VSNR3xdzl+o7Ph1fVjgq3U8I1PM+SVZJXslOT+dzw9LrYpWqajf78v1HZ8Or6tUFRz02u5knPUNWz7c7fiFwzVS61+2ZyHadX1bgKj/wCCarvX3vipPHzNilwfV/7uoX/dl+o7fh1fVka7ilGj/EqKPl1+BX/jDx87Olp00ndOd7SflHsRHEuGV4c8pOTvZ81R8zul3OV4nFtZ+ta9+mHsr9DK8tvhPXpHajWTk7Xxvn37W33M8KXs4jeWd+l/kjHRopfWs97Ws2vf1NuVLrKV/JtrNrPGxltfT3QpYuljZvbKts28/M86iGU5qTxj6zstr+W3YzaXL9nK3tbrjrayM1WjJ5lB3zeTvN9t3ZL8rFto0h9VFTV4ytFq/Lsr7XfKtzTqUFhXfNZNJLDz8Tdq6dueNleS5ndJ9u1/UyU6blJ2fM0rtXXba6WSm1kJqlb2ItJK98Xa820md3wfWKrpacorNuR2vZOPsv8ADHqcrW0vNl2s8/WT+fQmeC1VRptTVoSd/tN325ljK/sTrcTLquiqamNOm+bEeWVn3dtjkY669OpK11m0bK1sK/vsTsqLqLle17pP0vfzusf3I+twxNYxG2fVXyl1yRE5eULPUpZglbyax0u/M2aGom3mT5H2237e/wCRrVdBJJrmbk8JWvl4azs8JmzpdPVjmpH2X7N/Rp3svX5ltqOs8JT9qpCWb8trpO+79+50/Bozpamn+ytdz5Gnn2XmSv5JfI5HRtwta6e9vWVvX/4WF4O0SlJVZ4cV7Ed3lWcpdsXsvNjDG3OLZZSY3bsAAdzkAAAAAAgNd4z0FGcqdXUwjOO6tJ2a3WFuT5C6/wAKaKtN1KunhKb3dsv17kXfpM17RGs+kzhtNXVWVR22hTnf/wBkkc7qvpL1GofJw/TNN/akuea/6V7K97Z2lDwXw+LutLTv5xuTOm0lOmrU4Riv5YpfgU1nfa28Z6VfpvBWv1b/AGmtqtXz7cnJx8owWEdRwz6PdHSs5p1Zfzv2f/FHXAmYQudauk4dRpK1OlCK8opG0AX0oAABY+WPoA8uC7L4Hl0Y/dXwMgGhi/d4fdQ/d4fdXwMoI1Bi/dofdR5ekg/sozgaghONcMjKDSji2UvxKv41wpQn0SXl37+ZdUlc5Hj/AANNuTs1vsse85+XD3GuGXqqnhp3FctNK9pSvJXaXe3r3Nau7Tjz831erun5uzsvgdZX4PyyclK13m+YkNqqLjK7V7vdXyuhzxqxaKDthKzx0Tt6I2pU2rxgpJtZ3svdjBj00bvErdLZ/Pf4dzf09F9sL62MeV012GzSKnpYxey7JO1seuUvPPvNbS0lKUneys1eOFb1f5v9CerWlzcsLr2byay+uLbIjKGm/ayd0op3ut3ZOyXyIqWjqaDjGPKn73dfPZ+5mbhdFSmlLLj2tbC2ubvE9K4QcpKMklaMW756YX4+Z64bG6g1bGHZP0aT7epbaNNp1pKCUE7PHeKV+t9rHIabi9WrrowjN8kXUi44SkkpJtY3ul1W5YVOn7ErR3+q90uuUtzndRwyCbdNWm2+blXtYs9lttf/ADFsLIisdaaVrNSvUeFdSzB2v2z+Ru6fTYqXksON/ut3zv7vckR9SFOSTd1NxfM79ejuuyt8Dc0+ovB01Jc3K1y9Nr3jd4dl+ATpk4RroV3zUleEZON+9na5bnh6hywXTGfVlL+COFSpJqT5r1Oa9neTdr3jLrhfAvfh0EqcbK2Fusm3HJu6Y52toAHQzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8zgnuegRYIPiPhylWknUV4p35VhN92Q3HfDsYx5qUbRSd4/mjtDDqKd0zO4SxaZVT/wC4csmrNvboklvjt/Y29JSW115Ybt/SjPr4KFWUFaTTadni3n3ZJaPRKSuvTCscWvLp34R0dLKeE3bKXNG0Vby6v1/sQ64ZVo1r5lGW1s57tbLLOzVOMczd7YSXTJ7hw+pVi5RVl0vu8mmONVuThOJ8FnWbjGUlDdqOZzt0cnsvTv0Peh0Tj7NlFqzysbLCTy7HYz0vK1GonHzWH8jFPg8U1KDvvs/a+LIuNJlGbg9BtZtG66/kiK4vwJwlUqRu4yd08PdZ+rHGy+BLaWPLjbd3e/8AmSRoayK/06s01JYWL7dO5OtzRvVVJqdHUw4xfK22rror/HKJDh3Cr0+blk5O1pJNtZVlG+yfVljx4YrcsKsUkmleOVzZdn0Zs6bQUaMeWnG7XVkzjq+fJjrw5vg3CXCUf2sWs9VHfztn5lh0Nl+pzsdC6k030fXb4dH6HSaenyxSxjsb8c0589PaPoBszAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD40fQBUvibgVXT1nKSbpSk5Rmr2V3dqXnsbPDeMU4Y1Cm4fZlF3sv5o/oWdVpRknGSTi8NNXTOS4v4JjJN6eXLu+R/V9Ivoc+XHrzG+OcvjJs8J4ho6k4woXm315HZecmzo1TSKq0eg1GmrSs5wSteUW7ejtt7yf4bxGs5rn1Ti77Sg3F/Owx5E5cXuV2NfSQmvaVyLr8E35H6Jk3DZZv5rb3Hqxr/MrDbkq2nlHFSN/wDOjIPinAm2p0pOPtXXdPexY0qae6IniHD7e1FY6oyz4/DTDk1UHwxzcfay11XW3fsyT08XLCPWj08W2krXxuS+l0cYepOGN15M8pvw+6XT8q8zYANpGQACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaq0n+q59JRs153Ro1OFWq80YxlSliUWtvNImAVuMWmVjzTpqKSirJYSPQBZUAAGNUIp3SVzIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/2Q==">
+                </div>
+    
+                <div class="content">
+                    <h1> Mouse </h1>
+                    <p> hello i is Mouse. i live in you're home </p>
+                    <section class="interests">
+                        <header>things i like</header>
+                        <ul>
+                            <li>cheese</li>
+                            <li>more cheese</li>
+                            <li>even more cheese</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
